@@ -23,14 +23,14 @@
   {
     "name": "Bounce Back",
     "description": {
-      "en": "A C port of the J2ME game Bounce Back to PlayStation Portable, built using SDL2.",
-      "ru": "Порт J2ME-игры Bounce Back на PlayStation Portable, написанный на C с использованием SDL2."
+      "en": "A release-ready C port of the J2ME game Bounce Back to PlayStation Portable, built using SDL2; the final levels still await verification on real PSP hardware.",
+      "ru": "Готовый к релизу порт J2ME-игры Bounce Back на PlayStation Portable, написанный на C с использованием SDL2; последние уровни пока не проверены на реальной PSP."
     },
     "highlight": {
-      "en": "The original packed J2ME resource containers are parsed directly at runtime, with embedded PNG payloads decoded from memory through SDL2_image. This preserves the original asset structure while exploring a higher-level portable graphics, input and audio layer.",
-      "ru": "Оригинальные упакованные J2ME-контейнеры ресурсов разбираются напрямую во время выполнения, а вложенные PNG декодируются из памяти через SDL2_image. Такой подход сохраняет исходную структуру ассетов и одновременно использует более высокоуровневый переносимый слой для графики, ввода и аудио."
+      "en": "The original physics is reproduced with near pixel-level fidelity. Original packed J2ME resource containers are parsed directly at runtime, with embedded PNG payloads decoded from memory through SDL2_image. The only known functional omission is the demonstration replay in the Help menu; the rest of the game is implemented, although the final levels have not yet been tested on real hardware.",
+      "ru": "Физика оригинала воспроизведена почти попиксельно. Оригинальные упакованные J2ME-контейнеры ресурсов разбираются напрямую во время выполнения, а вложенные PNG декодируются из памяти через SDL2_image. Единственное известное функциональное отличие — отсутствует демонстрационный реплей в меню Help; остальная игра реализована, хотя последние уровни ещё не проверены на реальной консоли."
     },
-    "status": {"en": "Playable", "ru": "Играбельно"},
+    "status": {"en": "Release-ready", "ru": "Готов к релизу"},
     "tags": ["PSP", "C", "J2ME", "SDL2", "Port"],
     "image": "EBOO00649_00000.jpg",
     "github": "https://github.com/amdray/bounce_back",
