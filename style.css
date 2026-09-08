@@ -37,20 +37,22 @@ button { font: inherit; }
 .brand { text-decoration: none; font-weight: 750; letter-spacing: -0.03em; font-size: 1.1rem; }
 .github-link, .project-link { text-decoration: none; color: var(--muted); }
 .github-link:hover, .project-link:hover { color: var(--text); }
-.language-switch { display: flex; align-items: center; gap: 6px; color: var(--muted); }
+.language-switch { display: flex; align-items: center; gap: 7px; color: var(--muted); }
 .language-button {
   appearance: none;
   border: 0;
-  padding: 2px 0;
+  border-bottom: 1px solid transparent;
+  padding: 3px 0 2px;
   background: transparent;
   color: var(--muted);
   cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
 }
-.language-button:hover, .language-button.is-active { color: var(--text); }
-.language-separator { color: var(--line); user-select: none; }
+.language-button:hover { color: var(--text); }
+.language-button.is-active { color: var(--text); border-bottom-color: var(--text); }
+.language-separator { color: #4c5561; user-select: none; }
 .hero { padding: 84px 0 52px; max-width: 800px; }
 .eyebrow {
   margin: 0 0 12px;
@@ -69,18 +71,20 @@ button { font: inherit; }
 }
 .hero-copy { margin: 24px 0 0; color: var(--muted); font-size: clamp(1rem, 2vw, 1.2rem); }
 .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 0 0 22px; }
-.filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.filters { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
 .filter-button {
   appearance: none;
-  border: 1px solid var(--line);
-  border-radius: 999px;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
   background: transparent;
   color: var(--muted);
-  padding: 7px 12px;
+  padding: 4px 0 3px;
   font-size: 0.84rem;
   cursor: pointer;
 }
-.filter-button:hover, .filter-button.is-active { color: var(--text); border-color: #525b67; background: var(--panel); }
+.filter-button:hover { color: var(--text); }
+.filter-button.is-active { color: var(--text); border-bottom-color: var(--text); }
 .project-count { margin: 0; color: var(--muted); white-space: nowrap; font-size: 0.88rem; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; padding-bottom: 72px; }
 .project-card {
@@ -127,6 +131,7 @@ button { font: inherit; }
   .header-actions { gap: 14px; }
   .hero { padding-top: 56px; }
   .toolbar { align-items: flex-start; flex-direction: column; }
+  .filters { gap: 14px; }
   .project-grid { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
