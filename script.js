@@ -20,6 +20,14 @@ const translations = {
     loadError: "Could not load projects.json.",
     projectOne: "project",
     projectMany: "projects",
+    categoryLabels: {
+      Embedded: "Embedded",
+      Emulation: "Emulation",
+      Games: "Games",
+      Messaging: "Messaging",
+      Music: "Music",
+      "Reverse Engineering": "Reverse engineering"
+    },
     links: {
       github: "GitHub",
       page: "Details",
@@ -43,6 +51,14 @@ const translations = {
     projectOne: "проект",
     projectFew: "проекта",
     projectMany: "проектов",
+    categoryLabels: {
+      Embedded: "Встраиваемые системы",
+      Emulation: "Эмуляция",
+      Games: "Игры",
+      Messaging: "Мессенджеры",
+      Music: "Музыка",
+      "Reverse Engineering": "Реверс-инжиниринг"
+    },
     links: {
       github: "GitHub",
       page: "Подробнее",
@@ -152,19 +168,21 @@ function projectCard(project) {
 function renderProjects() {
   const projects = activeFilter === "__all__"
     ? allProjects
-    : allProjects.filter(project => (project.tags || []).includes(activeFilter));
+    : allProjects.filter(project => (project.categories || []).includes(activeFilter));
 
   projectsElement.innerHTML = projects.map(projectCard).join("");
   countElement.textContent = projectCountText(projects.length);
 }
 
 function renderFilters() {
-  const tags = [...new Set(allProjects.flatMap(project => project.tags || []))].sort();
-  const filters = ["__all__", ...tags];
+  const categories = [...new Set(allProjects.flatMap(project => project.categories || []))].sort();
+  const filters = ["__all__", ...categories];
   const t = translations[currentLanguage];
 
   filtersElement.innerHTML = filters.map(filter => {
-    const label = filter === "__all__" ? t.all : filter;
+    const label = filter === "__all__"
+      ? t.all
+      : (t.categoryLabels[filter] ?? filter);
     return `
       <button class="filter-button${filter === activeFilter ? " is-active" : ""}" type="button" data-filter="${escapeHtml(filter)}">
         ${escapeHtml(label)}
@@ -214,7 +232,7 @@ filtersElement.addEventListener("click", event => {
 
 async function loadProjects() {
   try {
-    const response = await fetch("projects.json?v=20260908-2", { cache: "no-store" });
+    const response = await fetch("projects.json?v=20260908-3", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
