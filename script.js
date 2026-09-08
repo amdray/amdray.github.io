@@ -205,7 +205,7 @@ filtersElement.addEventListener("click", event => {
 
 async function loadProjects() {
   try {
-    const response = await fetch("projects.json", { cache: "no-store" });
+    const response = await fetch("projects.json?v=20260908-1", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
