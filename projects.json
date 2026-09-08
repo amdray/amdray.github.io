@@ -2,8 +2,12 @@
   {
     "name": "Bounce Zero",
     "description": {
-      "en": "A from-scratch C port of the original Java/J2ME Bounce (2002) for PlayStation Portable, built without a game engine, frameworks or third-party graphics layers, while using the original game assets in their native formats without pre-conversion.",
-      "ru": "Порт оригинальной Java/J2ME-игры Bounce (2002) на C для PlayStation Portable, переписанный с нуля без игрового движка, фреймворков и сторонних графических прослоек, с использованием оригинальных игровых ассетов в их исходных форматах без предварительной конвертации."
+      "en": "A from-scratch C port of the original Java/J2ME Bounce (2002) to PlayStation Portable.",
+      "ru": "Порт оригинальной Java/J2ME-игры Bounce (2002) на PlayStation Portable, переписанный с нуля на C."
+    },
+    "highlight": {
+      "en": "Original level data, PNG graphics, OTT audio and localization files are consumed in their native formats through dedicated parsers and loaders, with rendering built directly on PSP GU. The port understands the original game's data instead of requiring a converted asset pipeline.",
+      "ru": "Оригинальные данные уровней, PNG-графика, OTT-звуки и файлы локализации используются в исходных форматах через собственные парсеры и загрузчики, а рендеринг построен напрямую на PSP GU. Порт понимает данные оригинальной игры вместо того, чтобы требовать отдельный конверсионный пайплайн ассетов."
     },
     "status": {
       "en": "Released",
@@ -12,6 +16,30 @@
     "tags": ["PSP", "C", "J2ME", "Port"],
     "image": "https://raw.githubusercontent.com/amdray/bounce_zero/main/docs/screenshots/BOUN01179_00004.jpg",
     "github": "https://github.com/amdray/bounce_zero",
+    "page": "",
+    "demo": "",
+    "video": "",
+    "website": "",
+    "year": 2026,
+    "featured": true
+  },
+  {
+    "name": "Bounce Back",
+    "description": {
+      "en": "A C port of the J2ME game Bounce Back to PlayStation Portable, built using SDL2.",
+      "ru": "Порт J2ME-игры Bounce Back на PlayStation Portable, написанный на C с использованием SDL2."
+    },
+    "highlight": {
+      "en": "The original packed J2ME resource containers are parsed directly at runtime, with embedded PNG payloads decoded from memory through SDL2_image. This preserves the original asset structure while exploring a higher-level portable graphics, input and audio layer.",
+      "ru": "Оригинальные упакованные J2ME-контейнеры ресурсов разбираются напрямую во время выполнения, а вложенные PNG декодируются из памяти через SDL2_image. Такой подход сохраняет исходную структуру ассетов и одновременно использует более высокоуровневый переносимый слой для графики, ввода и аудио."
+    },
+    "status": {
+      "en": "Playable",
+      "ru": "Играбельно"
+    },
+    "tags": ["PSP", "C", "J2ME", "SDL2", "Port"],
+    "image": "https://raw.githubusercontent.com/amdray/bounce_back/main/gifs/level_00.gif",
+    "github": "https://github.com/amdray/bounce_back",
     "page": "",
     "demo": "",
     "video": "",
