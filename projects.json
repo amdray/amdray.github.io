@@ -86,15 +86,15 @@
   {
     "name": "TrackMania 2003 Physics Reverse Engineering",
     "description": {
-      "en": "Reverse engineering of the physics and mathematical behavior of TrackMania (2003) in C++ as a foundation for a portable, cross-platform reimplementation.",
-      "ru": "Реверс-инжиниринг физики и математического поведения TrackMania (2003) на C++ как основы для переносимой кроссплатформенной реализации."
+      "en": "A playable C++ reverse-engineering reimplementation of TrackMania (2003) physics, with direct GBX parsing and reconstructed map and vehicle collisions.",
+      "ru": "Играбельная C++-реализация физики TrackMania (2003), создаваемая методом реверс-инжиниринга, с прямым чтением GBX и восстановленными коллизиями карты и автомобиля."
     },
     "highlight": {
-      "en": "The focus is behavioral parity: reconstructing update rules, constants and floating-point edge cases from the original executable so a new C++ implementation can reproduce the original vehicle dynamics across platforms.",
-      "ru": "Главная цель — поведенческая точность: восстановление правил обновления, констант и пограничного поведения вычислений с плавающей точкой по оригинальному исполняемому файлу, чтобы новая реализация на C++ воспроизводила исходную динамику машин на разных платформах."
+      "en": "GBX files are parsed directly without third-party libraries or conversion middleware. The implementation builds collision geometry for the map and car and is already drivable; from a player-experience perspective the physics is very close to the original game, while byte-level comparisons still reveal numerical divergence from the original simulation.",
+      "ru": "GBX-файлы читаются напрямую, без сторонних библиотек и промежуточной конвертации. Реализация строит коллизионную геометрию карты и автомобиля и уже позволяет полноценно ездить; по ощущениям физика очень близка к оригинальной игре, хотя побайтовое сравнение состояния симуляции всё ещё выявляет численные расхождения."
     },
-    "status": {"en": "Research", "ru": "Исследование"},
-    "tags": ["TrackMania", "C++", "Reverse Engineering", "Physics", "Port"],
+    "status": {"en": "Playable research", "ru": "Играбельное исследование"},
+    "tags": ["TrackMania", "C++", "GBX", "Reverse Engineering", "Physics", "Collision", "Port"],
     "image": "",
     "github": "",
     "page": "",
@@ -106,13 +106,16 @@
   },
   {
     "name": "BBVK",
-    "description": {"en": "A VK messenger client for the BlackBerry Bold 9900.", "ru": "Клиент мессенджера ВКонтакте для BlackBerry Bold 9900."},
-    "highlight": {
-      "en": "The client connects directly to VK from the BlackBerry Bold 9900 and handles the required encrypted communication on-device, without relying on proxy servers, while adapting messaging and interface flows to the platform's constraints.",
-      "ru": "Клиент подключается к ВКонтакте напрямую с BlackBerry Bold 9900 и выполняет необходимое шифрование на самом устройстве, без прокси-серверов, одновременно адаптируя сообщения и интерфейс под ограничения платформы."
+    "description": {
+      "en": "A working VK messenger client for the BlackBerry Bold 9900 with chats, text messaging, media reception and long polling.",
+      "ru": "Работающий клиент мессенджера ВКонтакте для BlackBerry Bold 9900 с чатами, текстовыми сообщениями, приёмом медиа и long polling."
     },
-    "status": {"en": "In development", "ru": "В разработке"},
-    "tags": ["BlackBerry 9900", "VK", "Messaging", "Encryption", "Legacy hardware"],
+    "highlight": {
+      "en": "Authentication uses a token obtained from the Windows application. The client supports chat lists, receiving and sending text messages, receiving stickers and images, and long-poll updates. It connects directly to VK and performs the required encrypted communication on the BlackBerry itself, without proxy servers.",
+      "ru": "Авторизация выполняется по токену, полученному из Windows-приложения. Работают список чатов, приём и отправка текстовых сообщений, приём стикеров и изображений, а также long poll. Клиент подключается к ВКонтакте напрямую и выполняет необходимое шифрование на самом BlackBerry, без прокси-серверов."
+    },
+    "status": {"en": "Working", "ru": "Работает"},
+    "tags": ["BlackBerry 9900", "VK", "Messaging", "Long Poll", "Encryption", "Legacy hardware"],
     "image": "",
     "github": "",
     "page": "",
