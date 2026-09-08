@@ -10,7 +10,8 @@
       "ru": "Физика оригинала воспроизведена с почти пиксельной поведенческой точностью, включая особенности и баги исходной игры. Оригинальные данные уровней, PNG-графика, OTT-звуки и файлы локализации используются в исходных форматах через собственные парсеры и загрузчики, а рендеринг построен напрямую на PSP GU."
     },
     "status": {"en": "Released", "ru": "Выпущен"},
-    "tags": ["PSP", "C", "J2ME", "Port"],
+    "categories": ["Games"],
+    "tags": ["PSP", "C", "J2ME"],
     "image": "https://raw.githubusercontent.com/amdray/bounce_zero/main/docs/screenshots/BOUN01179_00004.jpg",
     "github": "https://github.com/amdray/bounce_zero",
     "page": "",
@@ -31,7 +32,8 @@
       "ru": "Физика оригинала воспроизведена почти попиксельно. Оригинальные упакованные J2ME-контейнеры ресурсов разбираются напрямую во время выполнения, а вложенные PNG декодируются из памяти через SDL2_image. Единственное известное функциональное отличие — отсутствует демонстрационный реплей в меню Help; остальная игра реализована, хотя последние уровни ещё не проверены на реальной консоли."
     },
     "status": {"en": "Release-ready", "ru": "Готов к релизу"},
-    "tags": ["PSP", "C", "J2ME", "SDL2", "Port"],
+    "categories": ["Games"],
+    "tags": ["PSP", "C", "SDL2"],
     "image": "EBOO00649_00000.jpg",
     "github": "https://github.com/amdray/bounce_back",
     "page": "",
@@ -52,7 +54,8 @@
       "ru": "Собственное ранжирование фильтрует общую выдачу шести музыкальных каталогов, а отдельные механизмы загрузки извлекают, при необходимости расшифровывают и перепаковывают аудио, добавляя единообразные теги и обложки. В обычном режиме приложение работает, но одновременная работа нескольких пользователей пока может проявлять ошибки, связанные с конкурентным доступом."
     },
     "status": {"en": "Working", "ru": "Работает"},
-    "tags": ["Python", "Flask", "SQLite", "FFmpeg", "Search", "Music"],
+    "categories": ["Music"],
+    "tags": ["Python", "Flask", "Web"],
     "image": "Снимок экрана 2026-09-08 125650.png",
     "github": "",
     "page": "",
@@ -73,7 +76,8 @@
       "ru": "Реализация для PSP уже охватывает полный путь воспроизведения и основную работу с медиатекой: сеть, авторизацию по токену, плейлисты и очередь, загрузку тегов и обложек, а также локальное кэширование. Логика сервиса сохраняется переносимой для будущих платформ, например iOS 3.1.3 и PlayStation Vita."
     },
     "status": {"en": "Working", "ru": "Работает"},
-    "tags": ["PSP", "C", "Yandex Music", "MP3", "Caching", "Cross-platform"],
+    "categories": ["Music"],
+    "tags": ["PSP", "C", "Yandex Music"],
     "image": "",
     "github": "",
     "page": "",
@@ -94,7 +98,8 @@
       "ru": "GBX-файлы читаются напрямую, без сторонних библиотек и промежуточной конвертации. Реализация строит коллизионную геометрию карты и автомобиля и уже позволяет полноценно ездить; по ощущениям физика очень близка к оригинальной игре, хотя побайтовое сравнение состояния симуляции всё ещё выявляет численные расхождения."
     },
     "status": {"en": "Playable research", "ru": "Играбельное исследование"},
-    "tags": ["TrackMania", "C++", "GBX", "Reverse Engineering", "Physics", "Collision", "Port"],
+    "categories": ["Games", "Reverse Engineering"],
+    "tags": ["C++", "GBX", "Reverse Engineering"],
     "image": "",
     "github": "",
     "page": "",
@@ -115,7 +120,8 @@
       "ru": "Авторизация выполняется по токену, полученному из Windows-приложения. Работают список чатов, приём и отправка текстовых сообщений, приём стикеров и изображений, а также long poll. Клиент подключается к ВКонтакте напрямую и выполняет необходимое шифрование на самом BlackBerry, без прокси-серверов."
     },
     "status": {"en": "Working", "ru": "Работает"},
-    "tags": ["BlackBerry 9900", "VK", "Messaging", "Long Poll", "Encryption", "Legacy hardware"],
+    "categories": ["Messaging"],
+    "tags": ["BlackBerry 9900", "VK", "Messaging"],
     "image": "",
     "github": "",
     "page": "",
@@ -136,7 +142,8 @@
       "ru": "Реализован полный этап прямого рукопожатия с Telegram, включая все необходимые криптографические операции на самом BlackBerry и без прокси-серверов. Обмен сообщениями, работа с чатами и пользовательский интерфейс пока отсутствуют."
     },
     "status": {"en": "Handshake working", "ru": "Рукопожатие работает"},
-    "tags": ["BlackBerry 9900", "Telegram", "Cryptography", "Protocol", "Encryption", "Legacy hardware"],
+    "categories": ["Messaging"],
+    "tags": ["BlackBerry 9900", "Telegram", "Cryptography"],
     "image": "",
     "github": "",
     "page": "",
@@ -149,15 +156,16 @@
   {
     "name": "Clockwheel",
     "description": {
-      "en": "A working real-time emulator of the iPod Video 5G that runs the full UI, games and music from an image captured from a real player, combined with reverse engineering of its VC02 video coprocessor.",
-      "ru": "Работающий в реальном времени эмулятор iPod Video 5G, запускающий полный UI, игры и музыку из образа реального плеера, совмещённый с реверс-инжинирингом его видеосопроцессора VC02."
+      "en": "A working real-time iPod Video 5G emulator written in Rust that runs the full UI, games and music from an image captured from a real player, combined with reverse engineering of its VC02 video coprocessor.",
+      "ru": "Работающий в реальном времени эмулятор iPod Video 5G на Rust, запускающий полный UI, игры и музыку из образа реального плеера, совмещённый с реверс-инжинирингом его видеосопроцессора VC02."
     },
     "highlight": {
       "en": "Clockwheel uses an image from a real iPod as its emulated device image and runs the stock interface, games and music in real time. I2S is emulated as part of the hardware model, providing full audio playback, while the undocumented VC02 video coprocessor is being reverse engineered alongside the rest of the platform.",
       "ru": "Clockwheel использует образ реального iPod как образ своего эмулируемого устройства и в реальном времени запускает штатный интерфейс, игры и музыку. В аппаратную модель входит эмуляция I2S с полноценным воспроизведением звука, а недокументированный видеосопроцессор VC02 реверсится вместе с остальной платформой."
     },
     "status": {"en": "Working", "ru": "Работает"},
-    "tags": ["iPod Video 5G", "Emulation", "I2S", "Audio", "VC02", "Reverse Engineering", "Legacy hardware"],
+    "categories": ["Emulation", "Reverse Engineering"],
+    "tags": ["Rust", "iPod Video 5G", "Emulation", "Reverse Engineering"],
     "image": "",
     "github": "",
     "page": "",
@@ -178,7 +186,8 @@
       "ru": "Активность и состояние питания дисков вычисляются по дельтам сырых счётчиков производительности Windows, поэтому спящие диски не будятся ради мониторинга; SMART опрашивается только у уже активных накопителей. Клиент на LVGL с экраном 480×480 отображает пулы Storage Spaces, нагрузку и температуры дисков, CPU и сетевые метрики."
     },
     "status": {"en": "Working", "ru": "Работает"},
-    "tags": ["ESP32-S3", "C", "ESP-IDF", "LVGL", "PowerShell", "Windows", "NAS"],
+    "categories": ["Embedded"],
+    "tags": ["ESP32-S3", "C", "LVGL"],
     "image": "https://raw.githubusercontent.com/amdray/esp32-nas-monitor/main/docs/screenshot.png",
     "github": "https://github.com/amdray/esp32-nas-monitor",
     "page": "",
@@ -199,7 +208,8 @@
       "ru": "Сейчас реализован каркас с зачатками физики и игровой логики, логированием, а также парсерами уровней, бинарных ресурсов и текстур в форматах эпохи EPOC. До играбельного порта проект пока не доведён."
     },
     "status": {"en": "Early development", "ru": "Ранний этап"},
-    "tags": ["Symbian", "Nokia 7650", "S60", "SIS", "EPOC", "Parsing", "Port", "Reverse Engineering"],
+    "categories": ["Games", "Reverse Engineering"],
+    "tags": ["Symbian", "Reverse Engineering"],
     "image": "",
     "github": "",
     "page": "",
