@@ -160,5 +160,26 @@
     "website": "",
     "year": 2026,
     "featured": false
+  },
+  {
+    "name": "ESP32 NAS Monitor",
+    "description": {
+      "en": "A desktop status display for a Windows NAS, built around an ESP32-S3 touchscreen and a lightweight monitoring service.",
+      "ru": "Настольный дисплей состояния Windows NAS на ESP32-S3 с сенсорным экраном и лёгким сервисом сбора метрик."
+    },
+    "highlight": {
+      "en": "Disk activity and power state are derived from raw Windows performance-counter deltas so sleeping drives are never woken just to be monitored; SMART is queried only for disks that are already active. A 480×480 LVGL client renders Storage Spaces pools, disk load and temperatures, CPU and network metrics.",
+      "ru": "Активность и состояние питания дисков вычисляются по дельтам сырых счётчиков производительности Windows, поэтому спящие диски не будятся ради мониторинга; SMART опрашивается только у уже активных накопителей. Клиент на LVGL с экраном 480×480 отображает пулы Storage Spaces, нагрузку и температуры дисков, CPU и сетевые метрики."
+    },
+    "status": {"en": "Working", "ru": "Работает"},
+    "tags": ["ESP32-S3", "C", "ESP-IDF", "LVGL", "PowerShell", "Windows", "NAS"],
+    "image": "https://raw.githubusercontent.com/amdray/esp32-nas-monitor/main/docs/screenshot.png",
+    "github": "https://github.com/amdray/esp32-nas-monitor",
+    "page": "",
+    "demo": "",
+    "video": "",
+    "website": "",
+    "year": 2026,
+    "featured": false
   }
 ]
