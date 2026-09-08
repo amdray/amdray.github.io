@@ -21,6 +21,7 @@ Projects are defined in `projects.json`. Add one object per project:
     "en": "Released",
     "ru": "Выпущен"
   },
+  "categories": ["Games", "Reverse Engineering"],
   "tags": ["PSP", "C"],
   "image": "assets/projects/project-name.jpg",
   "github": "https://github.com/amdray/repository",
@@ -33,7 +34,9 @@ Projects are defined in `projects.json`. Add one object per project:
 }
 ```
 
-`name` is required. Empty optional links are not rendered. If `image` is empty, the card shows a neutral placeholder. `featured: true` moves a project above non-featured projects. Tags automatically become filter controls.
+`name` is required. Empty optional links are not rendered. If `image` is empty, the card shows a neutral placeholder. `featured: true` moves a project above non-featured projects.
+
+`categories` drive the top-level project filters and are intentionally broad. Current categories are `Embedded`, `Emulation`, `Games`, `Messaging`, `Music` and `Reverse Engineering`. `tags` are only displayed on project cards and are meant for a small set of useful platform/language/stack labels; they do not create filter buttons.
 
 ## Languages
 
@@ -55,7 +58,7 @@ Each card can contain:
 - project name and status;
 - short description;
 - `highlight` with the project's main technical feature or engineering value;
-- tags;
+- compact technology/platform tags;
 - links to GitHub, details, demo, video or website.
 
 The site files are `index.html`, `style.css`, `script.js` and `projects.json`.
