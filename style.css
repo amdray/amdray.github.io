@@ -101,6 +101,7 @@ button { font: inherit; }
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center top;
   background: linear-gradient(135deg, #1d2229, #111419);
   border-bottom: 1px solid var(--line);
 }
