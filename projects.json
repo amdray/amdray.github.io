@@ -9,10 +9,7 @@
       "en": "Original level data, PNG graphics, OTT audio and localization files are consumed in their native formats through dedicated parsers and loaders, with rendering built directly on PSP GU. The port understands the original game's data instead of requiring a converted asset pipeline.",
       "ru": "Оригинальные данные уровней, PNG-графика, OTT-звуки и файлы локализации используются в исходных форматах через собственные парсеры и загрузчики, а рендеринг построен напрямую на PSP GU. Порт понимает данные оригинальной игры вместо того, чтобы требовать отдельный конверсионный пайплайн ассетов."
     },
-    "status": {
-      "en": "Released",
-      "ru": "Выпущен"
-    },
+    "status": {"en": "Released", "ru": "Выпущен"},
     "tags": ["PSP", "C", "J2ME", "Port"],
     "image": "https://raw.githubusercontent.com/amdray/bounce_zero/main/docs/screenshots/BOUN01179_00004.jpg",
     "github": "https://github.com/amdray/bounce_zero",
@@ -33,10 +30,7 @@
       "en": "The original packed J2ME resource containers are parsed directly at runtime, with embedded PNG payloads decoded from memory through SDL2_image. This preserves the original asset structure while exploring a higher-level portable graphics, input and audio layer.",
       "ru": "Оригинальные упакованные J2ME-контейнеры ресурсов разбираются напрямую во время выполнения, а вложенные PNG декодируются из памяти через SDL2_image. Такой подход сохраняет исходную структуру ассетов и одновременно использует более высокоуровневый переносимый слой для графики, ввода и аудио."
     },
-    "status": {
-      "en": "Playable",
-      "ru": "Играбельно"
-    },
+    "status": {"en": "Playable", "ru": "Играбельно"},
     "tags": ["PSP", "C", "J2ME", "SDL2", "Port"],
     "image": "EBOO00649_00000.jpg",
     "github": "https://github.com/amdray/bounce_back",
@@ -57,10 +51,7 @@
       "en": "Custom ranking filters the combined results of six music catalogs, while provider-specific download mechanisms extract, decrypt when necessary, and remux audio with consistent metadata and artwork.",
       "ru": "Собственное ранжирование фильтрует общую выдачу шести музыкальных каталогов, а отдельные механизмы загрузки извлекают, при необходимости расшифровывают и перепаковывают аудио, добавляя единообразные теги и обложки."
     },
-    "status": {
-      "en": "Released",
-      "ru": "Выпущен"
-    },
+    "status": {"en": "Released", "ru": "Выпущен"},
     "tags": ["Python", "Flask", "SQLite", "FFmpeg", "Search", "Music"],
     "image": "Снимок экрана 2026-09-08 125650.png",
     "github": "",
@@ -81,10 +72,7 @@
       "en": "The project explores how a modern music service can be brought to constrained legacy hardware while keeping the service logic portable enough to reuse across very different platforms.",
       "ru": "Проект исследует, как перенести современный музыкальный сервис на ограниченное старое железо и при этом сохранить логику клиента достаточно переносимой для повторного использования на сильно различающихся платформах."
     },
-    "status": {
-      "en": "In development",
-      "ru": "В разработке"
-    },
+    "status": {"en": "In development", "ru": "В разработке"},
     "tags": ["PSP", "C", "Yandex Music", "MP3", "Cross-platform"],
     "image": "",
     "github": "",
@@ -105,10 +93,7 @@
       "en": "The focus is behavioral parity: reconstructing update rules, constants and floating-point edge cases from the original executable so a new C++ implementation can reproduce the original vehicle dynamics across platforms.",
       "ru": "Главная цель — поведенческая точность: восстановление правил обновления, констант и пограничного поведения вычислений с плавающей точкой по оригинальному исполняемому файлу, чтобы новая реализация на C++ воспроизводила исходную динамику машин на разных платформах."
     },
-    "status": {
-      "en": "Research",
-      "ru": "Исследование"
-    },
+    "status": {"en": "Research", "ru": "Исследование"},
     "tags": ["TrackMania", "C++", "Reverse Engineering", "Physics", "Port"],
     "image": "",
     "github": "",
@@ -121,18 +106,12 @@
   },
   {
     "name": "BBVK",
-    "description": {
-      "en": "A VK messenger client for the BlackBerry Bold 9900.",
-      "ru": "Клиент мессенджера ВКонтакте для BlackBerry Bold 9900."
-    },
+    "description": {"en": "A VK messenger client for the BlackBerry Bold 9900.", "ru": "Клиент мессенджера ВКонтакте для BlackBerry Bold 9900."},
     "highlight": {
       "en": "The project brings current VK messaging functionality to legacy BlackBerry hardware, adapting service interaction and interface flows to the constraints of the Bold 9900.",
       "ru": "Проект возвращает современный функционал сообщений ВКонтакте на старое оборудование BlackBerry, адаптируя работу с сервисом и интерфейс под ограничения Bold 9900."
     },
-    "status": {
-      "en": "In development",
-      "ru": "В разработке"
-    },
+    "status": {"en": "In development", "ru": "В разработке"},
     "tags": ["BlackBerry 9900", "VK", "Messaging", "Legacy hardware"],
     "image": "",
     "github": "",
@@ -145,19 +124,34 @@
   },
   {
     "name": "BBTG",
-    "description": {
-      "en": "A Telegram messenger client for the BlackBerry Bold 9900.",
-      "ru": "Клиент мессенджера Telegram для BlackBerry Bold 9900."
-    },
+    "description": {"en": "A Telegram messenger client for the BlackBerry Bold 9900.", "ru": "Клиент мессенджера Telegram для BlackBerry Bold 9900."},
     "highlight": {
       "en": "The project brings Telegram messaging to legacy BlackBerry hardware, adapting service interaction and interface flows to the constraints of the Bold 9900.",
       "ru": "Проект переносит Telegram на старое оборудование BlackBerry, адаптируя работу с сервисом и интерфейс под ограничения Bold 9900."
     },
-    "status": {
-      "en": "In development",
-      "ru": "В разработке"
-    },
+    "status": {"en": "In development", "ru": "В разработке"},
     "tags": ["BlackBerry 9900", "Telegram", "Messaging", "Legacy hardware"],
+    "image": "",
+    "github": "",
+    "page": "",
+    "demo": "",
+    "video": "",
+    "website": "",
+    "year": 2026,
+    "featured": false
+  },
+  {
+    "name": "Clockwheel",
+    "description": {
+      "en": "A real-time emulator of the iPod Video 5G, combined with reverse engineering of its VC02 video coprocessor.",
+      "ru": "Эмулятор iPod Video 5G в реальном времени, совмещённый с реверс-инжинирингом его видеосопроцессора VC02."
+    },
+    "highlight": {
+      "en": "The project reconstructs the behavior of the iPod Video 5G hardware closely enough for real-time emulation, with a dedicated reverse-engineering effort focused on the undocumented VC02 video coprocessor that drives the device's display and video path.",
+      "ru": "Проект восстанавливает поведение аппаратной части iPod Video 5G с точностью, достаточной для эмуляции в реальном времени, а отдельное направление реверса посвящено недокументированному видеосопроцессору VC02, отвечающему за вывод изображения и видеотракт устройства."
+    },
+    "status": {"en": "In development", "ru": "В разработке"},
+    "tags": ["iPod Video 5G", "Emulation", "VC02", "Reverse Engineering", "Legacy hardware"],
     "image": "",
     "github": "",
     "page": "",
