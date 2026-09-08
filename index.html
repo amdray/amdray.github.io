@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projects by amdray">
+  <meta name="color-scheme" content="dark light">
+  <title>amdray — projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Home">amdray</a>
+      <a class="github-link" href="https://github.com/amdray" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Projects</p>
+      <h1>Hardware, homebrew, emulation and reverse engineering.</h1>
+      <p class="hero-copy">Personal projects, experiments and research.</p>
+    </section>
+
+    <section class="toolbar" aria-label="Project filters">
+      <div id="filters" class="filters"></div>
+      <p id="project-count" class="project-count" aria-live="polite"></p>
+    </section>
+
+    <section id="projects" class="project-grid" aria-live="polite"></section>
+    <p id="load-error" class="load-error" hidden>
+      Could not load projects.json.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> amdray</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
