@@ -12,26 +12,31 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="Home">amdray</a>
-      <a class="github-link" href="https://github.com/amdray" target="_blank" rel="noreferrer">GitHub</a>
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Language">
+          <button class="language-button" type="button" data-language="en">EN</button>
+          <span class="language-separator">|</span>
+          <button class="language-button" type="button" data-language="ru">RU</button>
+        </div>
+        <a class="github-link" href="https://github.com/amdray" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
     </div>
   </header>
 
   <main class="container">
     <section class="hero">
-      <p class="eyebrow">Projects</p>
-      <h1>Hardware, homebrew, emulation and reverse engineering.</h1>
-      <p class="hero-copy">Personal projects, experiments and research.</p>
+      <p id="hero-eyebrow" class="eyebrow">Projects</p>
+      <h1 id="hero-title">Hardware, homebrew, emulation and reverse engineering.</h1>
+      <p id="hero-copy" class="hero-copy">Personal projects, experiments and research.</p>
     </section>
 
-    <section class="toolbar" aria-label="Project filters">
+    <section id="toolbar" class="toolbar" aria-label="Project filters">
       <div id="filters" class="filters"></div>
       <p id="project-count" class="project-count" aria-live="polite"></p>
     </section>
 
     <section id="projects" class="project-grid" aria-live="polite"></section>
-    <p id="load-error" class="load-error" hidden>
-      Could not load projects.json.
-    </p>
+    <p id="load-error" class="load-error" hidden>Could not load projects.json.</p>
   </main>
 
   <footer class="site-footer">
