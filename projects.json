@@ -108,11 +108,11 @@
     "name": "BBVK",
     "description": {"en": "A VK messenger client for the BlackBerry Bold 9900.", "ru": "Клиент мессенджера ВКонтакте для BlackBerry Bold 9900."},
     "highlight": {
-      "en": "The project brings current VK messaging functionality to legacy BlackBerry hardware, adapting service interaction and interface flows to the constraints of the Bold 9900.",
-      "ru": "Проект возвращает современный функционал сообщений ВКонтакте на старое оборудование BlackBerry, адаптируя работу с сервисом и интерфейс под ограничения Bold 9900."
+      "en": "The client connects directly to VK from the BlackBerry Bold 9900 and handles the required encrypted communication on-device, without relying on proxy servers, while adapting messaging and interface flows to the platform's constraints.",
+      "ru": "Клиент подключается к ВКонтакте напрямую с BlackBerry Bold 9900 и выполняет необходимое шифрование на самом устройстве, без прокси-серверов, одновременно адаптируя сообщения и интерфейс под ограничения платформы."
     },
     "status": {"en": "In development", "ru": "В разработке"},
-    "tags": ["BlackBerry 9900", "VK", "Messaging", "Legacy hardware"],
+    "tags": ["BlackBerry 9900", "VK", "Messaging", "Encryption", "Legacy hardware"],
     "image": "",
     "github": "",
     "page": "",
@@ -126,11 +126,11 @@
     "name": "BBTG",
     "description": {"en": "A Telegram messenger client for the BlackBerry Bold 9900.", "ru": "Клиент мессенджера Telegram для BlackBerry Bold 9900."},
     "highlight": {
-      "en": "The project brings Telegram messaging to legacy BlackBerry hardware, adapting service interaction and interface flows to the constraints of the Bold 9900.",
-      "ru": "Проект переносит Telegram на старое оборудование BlackBerry, адаптируя работу с сервисом и интерфейс под ограничения Bold 9900."
+      "en": "The client connects directly to Telegram from the BlackBerry Bold 9900 and handles the required encrypted communication on-device, without relying on proxy servers, while adapting messaging and interface flows to the platform's constraints.",
+      "ru": "Клиент подключается к Telegram напрямую с BlackBerry Bold 9900 и выполняет необходимое шифрование на самом устройстве, без прокси-серверов, одновременно адаптируя сообщения и интерфейс под ограничения платформы."
     },
     "status": {"en": "In development", "ru": "В разработке"},
-    "tags": ["BlackBerry 9900", "Telegram", "Messaging", "Legacy hardware"],
+    "tags": ["BlackBerry 9900", "Telegram", "Messaging", "Encryption", "Legacy hardware"],
     "image": "",
     "github": "",
     "page": "",
