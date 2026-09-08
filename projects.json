@@ -4,7 +4,7 @@
     "description": "A from-scratch C port of the original Java/J2ME Bounce (2002) for PlayStation Portable, built without a game engine, frameworks or third-party graphics layers, while using the original game assets in their native formats without pre-conversion.",
     "status": "Released",
     "tags": ["PSP", "C", "J2ME", "Port"],
-    "image": "https://raw.githubusercontent.com/amdray/bounce_zero/main/docs/screenshots/BOUN01179_00002.jpg",
+    "image": "https://raw.githubusercontent.com/amdray/bounce_zero/main/docs/screenshots/BOUN01179_00004.jpg",
     "github": "https://github.com/amdray/bounce_zero",
     "page": "",
     "demo": "",
