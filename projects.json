@@ -2,12 +2,12 @@
   {
     "name": "Bounce Zero",
     "description": {
-      "en": "A from-scratch C port of the original Java/J2ME Bounce (2002) to PlayStation Portable.",
-      "ru": "Порт оригинальной Java/J2ME-игры Bounce (2002) на PlayStation Portable, переписанный с нуля на C."
+      "en": "A fully playable, from-scratch C port of the original Java/J2ME Bounce (2002) to PlayStation Portable.",
+      "ru": "Полностью работоспособный порт оригинальной Java/J2ME-игры Bounce (2002) на PlayStation Portable, переписанный с нуля на C."
     },
     "highlight": {
-      "en": "Original level data, PNG graphics, OTT audio and localization files are consumed in their native formats through dedicated parsers and loaders, with rendering built directly on PSP GU. The port understands the original game's data instead of requiring a converted asset pipeline.",
-      "ru": "Оригинальные данные уровней, PNG-графика, OTT-звуки и файлы локализации используются в исходных форматах через собственные парсеры и загрузчики, а рендеринг построен напрямую на PSP GU. Порт понимает данные оригинальной игры вместо того, чтобы требовать отдельный конверсионный пайплайн ассетов."
+      "en": "The original physics is reproduced with near pixel-level behavioral fidelity, including quirks and bugs from the original game. Original level data, PNG graphics, OTT audio and localization files are consumed in their native formats through dedicated parsers and loaders, with rendering built directly on PSP GU.",
+      "ru": "Физика оригинала воспроизведена с почти пиксельной поведенческой точностью, включая особенности и баги исходной игры. Оригинальные данные уровней, PNG-графика, OTT-звуки и файлы локализации используются в исходных форматах через собственные парсеры и загрузчики, а рендеринг построен напрямую на PSP GU."
     },
     "status": {"en": "Released", "ru": "Выпущен"},
     "tags": ["PSP", "C", "J2ME", "Port"],
