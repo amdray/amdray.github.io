@@ -14,6 +14,7 @@ const translations = {
     heroCopy: "Personal projects, experiments and research.",
     filtersLabel: "Project filters",
     technologiesLabel: "Technologies",
+    keyIdea: "Key idea",
     all: "All",
     noImage: "No image",
     loadError: "Could not load projects.json.",
@@ -35,6 +36,7 @@ const translations = {
     heroCopy: "Личные проекты, эксперименты и исследования.",
     filtersLabel: "Фильтры проектов",
     technologiesLabel: "Технологии",
+    keyIdea: "Ключевая идея",
     all: "Все",
     noImage: "Нет изображения",
     loadError: "Не удалось загрузить projects.json.",
@@ -122,6 +124,7 @@ function projectCard(project) {
 
   const links = projectLinks(project);
   const description = localized(project.description);
+  const highlight = localized(project.highlight);
   const status = localized(project.status);
 
   return `
@@ -133,6 +136,12 @@ function projectCard(project) {
           ${status ? `<span class="project-status">${escapeHtml(status)}</span>` : ""}
         </div>
         <p class="project-description">${escapeHtml(description)}</p>
+        ${highlight ? `
+          <div class="project-highlight">
+            <span class="project-highlight-label">${escapeHtml(t.keyIdea)}</span>
+            <p>${escapeHtml(highlight)}</p>
+          </div>
+        ` : ""}
         ${tags ? `<ul class="project-tags" aria-label="${escapeHtml(t.technologiesLabel)}">${tags}</ul>` : ""}
         ${links ? `<div class="project-links">${links}</div>` : ""}
       </div>
@@ -205,7 +214,7 @@ filtersElement.addEventListener("click", event => {
 
 async function loadProjects() {
   try {
-    const response = await fetch("projects.json?v=20260908-1", { cache: "no-store" });
+    const response = await fetch("projects.json?v=20260908-2", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
