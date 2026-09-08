@@ -98,18 +98,18 @@
   {
     "name": "TrackMania 2003 Physics Reverse Engineering",
     "description": {
-      "en": "Reverse engineering of the physics and mathematical behavior of TrackMania (2003) as a foundation for a portable, cross-platform reimplementation.",
-      "ru": "Реверс-инжиниринг физики и математического поведения TrackMania (2003) как основы для переносимой кроссплатформенной реализации."
+      "en": "Reverse engineering of the physics and mathematical behavior of TrackMania (2003) in C++ as a foundation for a portable, cross-platform reimplementation.",
+      "ru": "Реверс-инжиниринг физики и математического поведения TrackMania (2003) на C++ как основы для переносимой кроссплатформенной реализации."
     },
     "highlight": {
-      "en": "The focus is behavioral parity: reconstructing update rules, constants and floating-point edge cases from the original executable so a new implementation can reproduce the original vehicle dynamics across platforms.",
-      "ru": "Главная цель — поведенческая точность: восстановление правил обновления, констант и пограничного поведения вычислений с плавающей точкой по оригинальному исполняемому файлу, чтобы новая реализация воспроизводила исходную динамику машин на разных платформах."
+      "en": "The focus is behavioral parity: reconstructing update rules, constants and floating-point edge cases from the original executable so a new C++ implementation can reproduce the original vehicle dynamics across platforms.",
+      "ru": "Главная цель — поведенческая точность: восстановление правил обновления, констант и пограничного поведения вычислений с плавающей точкой по оригинальному исполняемому файлу, чтобы новая реализация на C++ воспроизводила исходную динамику машин на разных платформах."
     },
     "status": {
       "en": "Research",
       "ru": "Исследование"
     },
-    "tags": ["TrackMania", "Reverse Engineering", "Physics", "Port"],
+    "tags": ["TrackMania", "C++", "Reverse Engineering", "Physics", "Port"],
     "image": "",
     "github": "",
     "page": "",
