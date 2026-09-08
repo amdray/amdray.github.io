@@ -70,5 +70,53 @@
     "website": "https://album-dl.yesterdaystea.ru/",
     "year": 2026,
     "featured": false
+  },
+  {
+    "name": "Yandex Music PSP Client",
+    "description": {
+      "en": "A Yandex Music client written in C for PlayStation Portable with MP3 playback support, intended as the first target of a future cross-platform client for legacy devices such as iOS 3.1.3 and PlayStation Vita.",
+      "ru": "Клиент Яндекс Музыки на C для PlayStation Portable с поддержкой воспроизведения MP3, задуманный как первая платформа будущего кроссплатформенного клиента для старых устройств, включая iOS 3.1.3 и PlayStation Vita."
+    },
+    "highlight": {
+      "en": "The project explores how a modern music service can be brought to constrained legacy hardware while keeping the service logic portable enough to reuse across very different platforms.",
+      "ru": "Проект исследует, как перенести современный музыкальный сервис на ограниченное старое железо и при этом сохранить логику клиента достаточно переносимой для повторного использования на сильно различающихся платформах."
+    },
+    "status": {
+      "en": "In development",
+      "ru": "В разработке"
+    },
+    "tags": ["PSP", "C", "Yandex Music", "MP3", "Cross-platform"],
+    "image": "",
+    "github": "",
+    "page": "",
+    "demo": "",
+    "video": "",
+    "website": "",
+    "year": 2026,
+    "featured": false
+  },
+  {
+    "name": "TrackMania 2003 Physics Reverse Engineering",
+    "description": {
+      "en": "Reverse engineering of the physics and mathematical behavior of TrackMania (2003) as a foundation for a portable, cross-platform reimplementation.",
+      "ru": "Реверс-инжиниринг физики и математического поведения TrackMania (2003) как основы для переносимой кроссплатформенной реализации."
+    },
+    "highlight": {
+      "en": "The focus is behavioral parity: reconstructing update rules, constants and floating-point edge cases from the original executable so a new implementation can reproduce the original vehicle dynamics across platforms.",
+      "ru": "Главная цель — поведенческая точность: восстановление правил обновления, констант и пограничного поведения вычислений с плавающей точкой по оригинальному исполняемому файлу, чтобы новая реализация воспроизводила исходную динамику машин на разных платформах."
+    },
+    "status": {
+      "en": "Research",
+      "ru": "Исследование"
+    },
+    "tags": ["TrackMania", "Reverse Engineering", "Physics", "Port"],
+    "image": "",
+    "github": "",
+    "page": "",
+    "demo": "",
+    "video": "",
+    "website": "",
+    "year": 2026,
+    "featured": false
   }
 ]
