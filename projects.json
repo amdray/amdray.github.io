@@ -46,5 +46,29 @@
     "website": "",
     "year": 2026,
     "featured": true
+  },
+  {
+    "name": "Y.T. Music Downloader",
+    "description": {
+      "en": "A web application for searching, selecting, and downloading albums in the highest available quality from Amazon Music, Apple Music, Deezer, Qobuz, TIDAL, and Yandex Music.",
+      "ru": "Веб-приложение для поиска, выбора и загрузки альбомов в максимально доступном качестве из Amazon Music, Apple Music, Deezer, Qobuz, TIDAL и Яндекс Музыки."
+    },
+    "highlight": {
+      "en": "Custom ranking filters the combined results of six music catalogs, while provider-specific download mechanisms extract, decrypt when necessary, and remux audio with consistent metadata and artwork.",
+      "ru": "Собственное ранжирование фильтрует общую выдачу шести музыкальных каталогов, а отдельные механизмы загрузки извлекают, при необходимости расшифровывают и перепаковывают аудио, добавляя единообразные теги и обложки."
+    },
+    "status": {
+      "en": "Released",
+      "ru": "Выпущен"
+    },
+    "tags": ["Python", "Flask", "SQLite", "FFmpeg", "Search", "Music"],
+    "image": "Снимок экрана 2026-09-08 125650.png",
+    "github": "",
+    "page": "",
+    "demo": "",
+    "video": "",
+    "website": "https://album-dl.yesterdaystea.ru/",
+    "year": 2026,
+    "featured": false
   }
 ]
