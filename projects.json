@@ -127,13 +127,16 @@
   },
   {
     "name": "BBTG",
-    "description": {"en": "A Telegram messenger client for the BlackBerry Bold 9900.", "ru": "Клиент мессенджера Telegram для BlackBerry Bold 9900."},
-    "highlight": {
-      "en": "The client connects directly to Telegram from the BlackBerry Bold 9900 and handles the required encrypted communication on-device, without relying on proxy servers, while adapting messaging and interface flows to the platform's constraints.",
-      "ru": "Клиент подключается к Telegram напрямую с BlackBerry Bold 9900 и выполняет необходимое шифрование на самом устройстве, без прокси-серверов, одновременно адаптируя сообщения и интерфейс под ограничения платформы."
+    "description": {
+      "en": "An early-stage Telegram client for the BlackBerry Bold 9900 with a working direct server handshake and the full cryptographic stack required by the protocol; chat and UI are not implemented yet.",
+      "ru": "Клиент Telegram для BlackBerry Bold 9900 на раннем этапе: работает прямое рукопожатие с сервером и вся требуемая протоколом криптография, но чаты и UI пока не реализованы."
     },
-    "status": {"en": "In development", "ru": "В разработке"},
-    "tags": ["BlackBerry 9900", "Telegram", "Messaging", "Encryption", "Legacy hardware"],
+    "highlight": {
+      "en": "The implemented milestone is the complete direct handshake with Telegram, including all required cryptographic operations performed on the BlackBerry itself and without proxy servers. Message exchange, chat handling and user interface are not implemented yet.",
+      "ru": "Реализован полный этап прямого рукопожатия с Telegram, включая все необходимые криптографические операции на самом BlackBerry и без прокси-серверов. Обмен сообщениями, работа с чатами и пользовательский интерфейс пока отсутствуют."
+    },
+    "status": {"en": "Handshake working", "ru": "Рукопожатие работает"},
+    "tags": ["BlackBerry 9900", "Telegram", "Cryptography", "Protocol", "Encryption", "Legacy hardware"],
     "image": "",
     "github": "",
     "page": "",
@@ -146,15 +149,15 @@
   {
     "name": "Clockwheel",
     "description": {
-      "en": "A real-time emulator of the iPod Video 5G, combined with reverse engineering of its VC02 video coprocessor.",
-      "ru": "Эмулятор iPod Video 5G в реальном времени, совмещённый с реверс-инжинирингом его видеосопроцессора VC02."
+      "en": "A working real-time emulator of the iPod Video 5G that runs the full UI, games and music from an image captured from a real player, combined with reverse engineering of its VC02 video coprocessor.",
+      "ru": "Работающий в реальном времени эмулятор iPod Video 5G, запускающий полный UI, игры и музыку из образа реального плеера, совмещённый с реверс-инжинирингом его видеосопроцессора VC02."
     },
     "highlight": {
-      "en": "The project reconstructs the behavior of the iPod Video 5G hardware closely enough for real-time emulation, with a dedicated reverse-engineering effort focused on the undocumented VC02 video coprocessor that drives the device's display and video path.",
-      "ru": "Проект восстанавливает поведение аппаратной части iPod Video 5G с точностью, достаточной для эмуляции в реальном времени, а отдельное направление реверса посвящено недокументированному видеосопроцессору VC02, отвечающему за вывод изображения и видеотракт устройства."
+      "en": "Clockwheel uses an image from a real iPod as its emulated device image and runs the stock interface, games and music in real time. I2S is emulated as part of the hardware model, providing full audio playback, while the undocumented VC02 video coprocessor is being reverse engineered alongside the rest of the platform.",
+      "ru": "Clockwheel использует образ реального iPod как образ своего эмулируемого устройства и в реальном времени запускает штатный интерфейс, игры и музыку. В аппаратную модель входит эмуляция I2S с полноценным воспроизведением звука, а недокументированный видеосопроцессор VC02 реверсится вместе с остальной платформой."
     },
-    "status": {"en": "In development", "ru": "В разработке"},
-    "tags": ["iPod Video 5G", "Emulation", "VC02", "Reverse Engineering", "Legacy hardware"],
+    "status": {"en": "Working", "ru": "Работает"},
+    "tags": ["iPod Video 5G", "Emulation", "I2S", "Audio", "VC02", "Reverse Engineering", "Legacy hardware"],
     "image": "",
     "github": "",
     "page": "",
@@ -167,8 +170,8 @@
   {
     "name": "ESP32 NAS Monitor",
     "description": {
-      "en": "A desktop status display for a Windows NAS, built around an ESP32-S3 touchscreen and a lightweight monitoring service.",
-      "ru": "Настольный дисплей состояния Windows NAS на ESP32-S3 с сенсорным экраном и лёгким сервисом сбора метрик."
+      "en": "A working desktop status display for a Windows NAS, built around an ESP32-S3 touchscreen and a lightweight monitoring service.",
+      "ru": "Работающий настольный дисплей состояния Windows NAS на ESP32-S3 с сенсорным экраном и лёгким сервисом сбора метрик."
     },
     "highlight": {
       "en": "Disk activity and power state are derived from raw Windows performance-counter deltas so sleeping drives are never woken just to be monitored; SMART is queried only for disks that are already active. A 480×480 LVGL client renders Storage Spaces pools, disk load and temperatures, CPU and network metrics.",
@@ -188,15 +191,15 @@
   {
     "name": "Bounce Symbian",
     "description": {
-      "en": "A port of the native Symbian/S60 Bounce release for the Nokia 7650, based on the SIS application rather than the later Java/J2ME version.",
-      "ru": "Порт нативной Symbian/S60-версии Bounce для Nokia 7650, основанный на SIS-приложении, а не на более поздней Java/J2ME-версии."
+      "en": "An early porting and reverse-engineering skeleton for the native Symbian/S60 Bounce release from the Nokia 7650, based on the SIS application rather than the later Java/J2ME version.",
+      "ru": "Ранний каркас порта и реверс-инжиниринга нативной Symbian/S60-версии Bounce с Nokia 7650, основанный на SIS-приложении, а не на более поздней Java/J2ME-версии."
     },
     "highlight": {
-      "en": "The Nokia 7650 release belongs to the native Symbian lineage of Bounce that predates the J2ME release. Porting therefore starts from a native Symbian/S60 application and its original data rather than Java classes and a JAR asset layout.",
-      "ru": "Версия для Nokia 7650 относится к нативной Symbian-линии Bounce, появившейся раньше J2ME-релиза. Поэтому портирование начинается с нативного приложения Symbian/S60 и его исходных данных, а не с Java-классов и структуры ассетов JAR."
+      "en": "The current build contains early physics and game-logic groundwork plus logging, along with parsers for levels, binary resources and textures stored in EPOC-era formats. It is not yet a playable port.",
+      "ru": "Сейчас реализован каркас с зачатками физики и игровой логики, логированием, а также парсерами уровней, бинарных ресурсов и текстур в форматах эпохи EPOC. До играбельного порта проект пока не доведён."
     },
-    "status": {"en": "In development", "ru": "В разработке"},
-    "tags": ["Symbian", "Nokia 7650", "S60", "SIS", "Port", "Reverse Engineering"],
+    "status": {"en": "Early development", "ru": "Ранний этап"},
+    "tags": ["Symbian", "Nokia 7650", "S60", "SIS", "EPOC", "Parsing", "Port", "Reverse Engineering"],
     "image": "",
     "github": "",
     "page": "",
