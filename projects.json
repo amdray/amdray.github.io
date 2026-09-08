@@ -181,5 +181,26 @@
     "website": "",
     "year": 2026,
     "featured": false
+  },
+  {
+    "name": "Bounce Symbian",
+    "description": {
+      "en": "A port of the native Symbian/S60 Bounce release for the Nokia 7650, based on the SIS application rather than the later Java/J2ME version.",
+      "ru": "Порт нативной Symbian/S60-версии Bounce для Nokia 7650, основанный на SIS-приложении, а не на более поздней Java/J2ME-версии."
+    },
+    "highlight": {
+      "en": "The Nokia 7650 release belongs to the native Symbian lineage of Bounce that predates the J2ME release. Porting therefore starts from a native Symbian/S60 application and its original data rather than Java classes and a JAR asset layout.",
+      "ru": "Версия для Nokia 7650 относится к нативной Symbian-линии Bounce, появившейся раньше J2ME-релиза. Поэтому портирование начинается с нативного приложения Symbian/S60 и его исходных данных, а не с Java-классов и структуры ассетов JAR."
+    },
+    "status": {"en": "In development", "ru": "В разработке"},
+    "tags": ["Symbian", "Nokia 7650", "S60", "SIS", "Port", "Reverse Engineering"],
+    "image": "",
+    "github": "",
+    "page": "",
+    "demo": "",
+    "video": "",
+    "website": "",
+    "year": 2026,
+    "featured": false
   }
 ]
