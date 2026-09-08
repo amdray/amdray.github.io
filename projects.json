@@ -44,14 +44,14 @@
   {
     "name": "Y.T. Music Downloader",
     "description": {
-      "en": "A web application for searching, selecting, and downloading albums in the highest available quality from Amazon Music, Apple Music, Deezer, Qobuz, TIDAL, and Yandex Music.",
-      "ru": "Веб-приложение для поиска, выбора и загрузки альбомов в максимально доступном качестве из Amazon Music, Apple Music, Deezer, Qobuz, TIDAL и Яндекс Музыки."
+      "en": "A working web application for searching, selecting, and downloading albums in the highest available quality from Amazon Music, Apple Music, Deezer, Qobuz, TIDAL, and Yandex Music.",
+      "ru": "Работающее веб-приложение для поиска, выбора и загрузки альбомов в максимально доступном качестве из Amazon Music, Apple Music, Deezer, Qobuz, TIDAL и Яндекс Музыки."
     },
     "highlight": {
-      "en": "Custom ranking filters the combined results of six music catalogs, while provider-specific download mechanisms extract, decrypt when necessary, and remux audio with consistent metadata and artwork.",
-      "ru": "Собственное ранжирование фильтрует общую выдачу шести музыкальных каталогов, а отдельные механизмы загрузки извлекают, при необходимости расшифровывают и перепаковывают аудио, добавляя единообразные теги и обложки."
+      "en": "Custom ranking filters the combined results of six music catalogs, while provider-specific download mechanisms extract, decrypt when necessary, and remux audio with consistent metadata and artwork. Normal use works, but simultaneous activity from multiple users may still expose concurrency-related bugs.",
+      "ru": "Собственное ранжирование фильтрует общую выдачу шести музыкальных каталогов, а отдельные механизмы загрузки извлекают, при необходимости расшифровывают и перепаковывают аудио, добавляя единообразные теги и обложки. В обычном режиме приложение работает, но одновременная работа нескольких пользователей пока может проявлять ошибки, связанные с конкурентным доступом."
     },
-    "status": {"en": "Released", "ru": "Выпущен"},
+    "status": {"en": "Working", "ru": "Работает"},
     "tags": ["Python", "Flask", "SQLite", "FFmpeg", "Search", "Music"],
     "image": "Снимок экрана 2026-09-08 125650.png",
     "github": "",
@@ -65,15 +65,15 @@
   {
     "name": "Yandex Music PSP Client",
     "description": {
-      "en": "A Yandex Music client written in C for PlayStation Portable with MP3 playback support, intended as the first target of a future cross-platform client for legacy devices such as iOS 3.1.3 and PlayStation Vita.",
-      "ru": "Клиент Яндекс Музыки на C для PlayStation Portable с поддержкой воспроизведения MP3, задуманный как первая платформа будущего кроссплатформенного клиента для старых устройств, включая iOS 3.1.3 и PlayStation Vita."
+      "en": "A working Yandex Music client written in C for PlayStation Portable with MP3 playback, playback queue, playlists, metadata, artwork, caching and networking, using token-based authentication.",
+      "ru": "Работающий клиент Яндекс Музыки на C для PlayStation Portable с воспроизведением MP3, очередью воспроизведения, плейлистами, тегами, обложками, кэшированием и сетевым доступом; авторизация выполняется по токену."
     },
     "highlight": {
-      "en": "The project explores how a modern music service can be brought to constrained legacy hardware while keeping the service logic portable enough to reuse across very different platforms.",
-      "ru": "Проект исследует, как перенести современный музыкальный сервис на ограниченное старое железо и при этом сохранить логику клиента достаточно переносимой для повторного использования на сильно различающихся платформах."
+      "en": "The PSP implementation already covers the complete playback path and core library workflow: network access, token authentication, playlists and queue handling, metadata and artwork loading, and local caching. The service logic is being kept portable for future targets such as iOS 3.1.3 and PlayStation Vita.",
+      "ru": "Реализация для PSP уже охватывает полный путь воспроизведения и основную работу с медиатекой: сеть, авторизацию по токену, плейлисты и очередь, загрузку тегов и обложек, а также локальное кэширование. Логика сервиса сохраняется переносимой для будущих платформ, например iOS 3.1.3 и PlayStation Vita."
     },
-    "status": {"en": "In development", "ru": "В разработке"},
-    "tags": ["PSP", "C", "Yandex Music", "MP3", "Cross-platform"],
+    "status": {"en": "Working", "ru": "Работает"},
+    "tags": ["PSP", "C", "Yandex Music", "MP3", "Caching", "Cross-platform"],
     "image": "",
     "github": "",
     "page": "",
